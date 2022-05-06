@@ -27,6 +27,10 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>com.fasterxml.jackson.module</groupId>
 			<artifactId>jackson-module-kotlin</artifactId>
 		</dependency>
@@ -86,7 +90,7 @@
 							<goal>wget</goal>
 						</goals>
 						<configuration>
-							<url>https://raw.githubusercontent.com/lgblaumeiser/ProjectTimeManager2.Api/v2/ptm-api.yaml</url>
+							<url>https://raw.githubusercontent.com/lgblaumeiser/ProjectTimeManager2.Api/cv20220506_2_lw/ptm-api.yaml</url>
 							<outputFileName>ptm-api.yaml</outputFileName>
 							<skipCache>true</skipCache>
 							<outputDirectory>${project.build.directory}/openapi</outputDirectory>
@@ -144,6 +148,7 @@
 								<oas3>true</oas3>
 								<exceptionHandler>false</exceptionHandler>
 								<interfaceOnly>true</interfaceOnly>
+								<delegatePattern>false</delegatePattern>
 								<packageName>de.lgblaumeiser.ptm.spring.backend.rest</packageName>
 							</configOptions>
 						</configuration>
