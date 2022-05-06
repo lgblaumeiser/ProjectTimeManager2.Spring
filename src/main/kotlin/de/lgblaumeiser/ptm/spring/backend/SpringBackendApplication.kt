@@ -1,3 +1,5 @@
+// SPDX-FileCopyrightText: 2022 Lars Geyer-Blaumeiser <lars@lgblaumeiser.de>
+// SPDX-License-Identifier: MIT
 package de.lgblaumeiser.ptm.spring.backend
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
